@@ -80,7 +80,7 @@ public class RotationController : MonoBehaviour {
     private void SwapObjs()
     {
         ///Turning on and off A Objects
-        if (transform.rotation.y <= 0.7f)
+        if (rotAngle < 180)
         {
             foreach (GameObject a in aObjs)
             {
@@ -96,18 +96,18 @@ public class RotationController : MonoBehaviour {
         }
 
         ///Turning on and off B Objects
-        if (transform.rotation.y >= 0.7f)
+        if (rotAngle < 180)
         {
             foreach (GameObject b in bObjs)
             {
-                b.SetActive(true);
+                b.SetActive(false);
             }
         }
         else
         {
             foreach (GameObject b in bObjs)
             {
-                b.SetActive(false);
+                b.SetActive(true);
             }
         }
     }
