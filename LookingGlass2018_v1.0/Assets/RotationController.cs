@@ -11,6 +11,7 @@ public class RotationController : MonoBehaviour {
     public float rotSpeedOutput;
 
     private Vector3 _rotToSet;
+    private float _rotRateCalculated;
 
 	void Start () {
         _rotToSet = Vector3.zero;
@@ -38,6 +39,7 @@ public class RotationController : MonoBehaviour {
     private void SetRotationAngle()
     {
         _rotToSet.y = rotAngle;
-        transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(_rotToSet), rotSpeedOutput);
+
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(_rotToSet), rotSpeedOutput);
     }
 }
