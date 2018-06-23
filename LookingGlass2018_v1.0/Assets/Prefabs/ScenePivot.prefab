@@ -269,6 +269,8 @@ MonoBehaviour:
   fovA: 0
   fovB: 0
   fovC: 0
+  aObjs: []
+  bObjs: []
 --- !u!114 &114873206257224130
 MonoBehaviour:
   m_ObjectHideFlags: 1
