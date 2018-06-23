@@ -37,36 +37,7 @@ public class RotationController : MonoBehaviour {
         InputMethod();
         SetRotationAngle();
         AToBCamXfm();
-	}
-
-
-        ///Turning on and off A Objects
-        if (transform.rotation.y <= 0.7f) { 
-            foreach (GameObject a in aObjs)
-            {
-                a.SetActive(true);
-            }
-        } else {
-            foreach (GameObject a in aObjs)
-            {
-                a.SetActive(false);
-            }
-        }
-
-        ///Turning on and off B Objects
-        if (transform.rotation.y >= 0.7f)
-        {
-            foreach (GameObject b in bObjs)
-            {
-                b.SetActive(true);
-            }
-        } else {
-            foreach (GameObject b in bObjs)
-            {
-                b.SetActive(false);
-            }
-        }
-
+        SwapObjs();
     }
 
 
@@ -103,6 +74,41 @@ public class RotationController : MonoBehaviour {
         {
             myCap.Size = Mathf.Lerp(sizeB, sizeC, (rotAngle - 180) / 180);
             myCap.Fov = Mathf.Lerp(fovB, fovC, (rotAngle - 180) / 180);
+        }
+    }
+
+    private void SwapObjs()
+    {
+        ///Turning on and off A Objects
+        if (transform.rotation.y <= 0.7f)
+        {
+            foreach (GameObject a in aObjs)
+            {
+                a.SetActive(true);
+            }
+        }
+        else
+        {
+            foreach (GameObject a in aObjs)
+            {
+                a.SetActive(false);
+            }
+        }
+
+        ///Turning on and off B Objects
+        if (transform.rotation.y >= 0.7f)
+        {
+            foreach (GameObject b in bObjs)
+            {
+                b.SetActive(true);
+            }
+        }
+        else
+        {
+            foreach (GameObject b in bObjs)
+            {
+                b.SetActive(false);
+            }
         }
     }
 }
