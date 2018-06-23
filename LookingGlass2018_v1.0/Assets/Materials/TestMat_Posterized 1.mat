@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: TestMat_Posterized
+  m_Name: TestMat_Posterized 1
   m_Shader: {fileID: 4800000, guid: a7df38692a17ce94580745a682a0a7be, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -80,5 +80,5 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DiffuseColor: {r: 1, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 0.27205884, g: 0, b: 0, a: 1}
-    - _MainColor: {r: 0.7794118, g: 0.37251297, b: 0.37251297, a: 1}
-    - _SpecularColor: {r: 1, g: 0.7058823, b: 0.7058823, a: 1}
+    - _MainColor: {r: 0.25735295, g: 0.122999564, b: 0.122999564, a: 1}
+    - _SpecularColor: {r: 0.8014706, g: 0.5244918, b: 0.5244918, a: 1}
