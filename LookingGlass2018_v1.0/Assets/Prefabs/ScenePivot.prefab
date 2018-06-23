@@ -263,6 +263,8 @@ MonoBehaviour:
   myCap: {fileID: 114873206257224130}
   rotSpeedInput: 10
   rotSpeedOutput: 0.08
+  aObjs: []
+  bObjs: []
 --- !u!114 &114873206257224130
 MonoBehaviour:
   m_ObjectHideFlags: 1
