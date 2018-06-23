@@ -39,6 +39,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4623708906488252}
   - component: {fileID: 20195766575184784}
+  - component: {fileID: 114980952889440102}
+  - component: {fileID: 114303384524616538}
   m_Layer: 0
   m_Name: HoloPlay Camera
   m_TagString: Untagged
@@ -95,14 +97,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1194288111520422}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.10261897, y: 0, z: 0, w: 0.99472076}
+  m_LocalPosition: {x: 0, y: 4.29, z: 0.19}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4623708906488252}
   m_Father: {fileID: 4611913285419072}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 11.78, y: 0, z: 0}
 --- !u!20 &20195766575184784
 Camera:
   m_ObjectHideFlags: 1
@@ -119,8 +121,8 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 37.24479
-  far clip plane: 52.24479
+  near clip plane: 36.39479
+  far clip plane: 72.24479
   field of view: 13.5
   orthographic: 0
   orthographic size: 5
@@ -199,18 +201,18 @@ MonoBehaviour:
   quiltRT: {fileID: 0}
   overrideTexture: {fileID: 0}
   tiling:
-    name: High Res
-    tilesX: 5
-    tilesY: 9
-    quiltSize: 4096
+    name: 2D in editor
+    tilesX: 1
+    tilesY: 1
+    quiltSize: 1024
   tilingPresetIndex: 1
-  numViews: 45
-  tileSizeX: 819
-  tileSizeY: 455
-  paddingX: 1
-  paddingY: 1
-  portionX: 0.99975586
-  portionY: 0.99975586
+  numViews: 1
+  tileSizeX: 1024
+  tileSizeY: 1024
+  paddingX: 0
+  paddingY: 0
+  portionX: 1
+  portionY: 1
   aspect: 1.6
   config:
     configVersion: 0.4
@@ -248,7 +250,19 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   emulateHPButtons: 0
   advancedFoldout: 0
-  renderIn2D: 0
+  renderIn2D: 1
+--- !u!114 &114303384524616538
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1739993062125182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: ee843abf4cc21c44d86f726c3075bd4d, type: 2}
 --- !u!114 &114686305660513242
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -260,15 +274,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86653573f15e4ad47949159828885e33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  angle_mult: 8
+  button_state: 0
   myCap: {fileID: 114873206257224130}
-  rotSpeedInput: 10
   rotSpeedOutput: 0.08
-  sizeA: 0
-  sizeB: 0
-  sizeC: 0
-  fovA: 0
-  fovB: 0
-  fovC: 0
+  sizeA: 5
+  sizeB: 5.75
+  sizeC: 4
+  fovA: 13.5
+  fovB: 13.5
+  fovC: 16.5
   aObjs: []
   bObjs: []
 --- !u!114 &114873206257224130
@@ -284,7 +299,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   size: 5
   fov: 13.5
-  nearClipFactor: 1
-  farClipFactor: 2
+  nearClipFactor: 1.17
+  farClipFactor: 6
   cam: {fileID: 20195766575184784}
-  advancedFoldout: 0
+  advancedFoldout: 1
+--- !u!114 &114980952889440102
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1739993062125182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 926a873c2df9f6e44a5ab588192d0228, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cutoff: 0.437
