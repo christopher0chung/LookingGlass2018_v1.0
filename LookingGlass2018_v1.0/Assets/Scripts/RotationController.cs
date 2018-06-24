@@ -11,7 +11,7 @@ public class RotationController : MonoBehaviour {
     private const ushort USB_VID = 0x077d;
     private const ushort USB_PID = 0x0410;
     private static volatile int angle_delta = 0;
-    public float angle_mult = 11.61290f;
+    public float angle_mult = 0.61290f;
     public volatile bool button_state = false;
     private static USBDevice dev;
     private static DeviceScanner scanner;

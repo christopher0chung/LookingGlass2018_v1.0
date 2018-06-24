@@ -6,17 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Interstitial1.unity
+    guid: 630a29d16bd6db54e8331cf7693c0f0d
+  - enabled: 1
     path: Assets/S_Beo.unity
     guid: 473402913605a1e45beb5084342e0183
+  - enabled: 1
+    path: Assets/Interstitial2.unity
+    guid: 6dac2ff28849c264db56303b3b0e0b66
   - enabled: 1
     path: Assets/S_Wall.unity
     guid: 9bdd894d57d25487c8ba1d3701bbecc9
   - enabled: 1
-    path: Assets/TestCam_Chris.unity
-    guid: 10730e468aec0e84988897bedbcb8d2a
-  - enabled: 1
-    path: Assets/asdf1.unity
-    guid: 630a29d16bd6db54e8331cf7693c0f0d
-  - enabled: 1
-    path: Assets/asdf2.unity
-    guid: ee12db157325b574295c8cd4277d3a26
+    path: Assets/Interstitial3.unity
+    guid: c9045c378c20c3c4694f3976c6944959

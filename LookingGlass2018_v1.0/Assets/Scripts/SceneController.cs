@@ -11,16 +11,17 @@ public class SceneController : MonoBehaviour {
 
     private float timer;
 
-        void Start()
+    void Start()
     {
         myRC = gameObject.GetComponent<RotationController>();
+        timer = 0;
     }
 
     void Update()
     {
         timer += Time.deltaTime;
 
-        if (timer > .5f)
+        if (timer > .15f)
         {
             if (myRC.button_state)
             {
