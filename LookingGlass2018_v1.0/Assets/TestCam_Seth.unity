@@ -156,12 +156,12 @@ Prefab:
         type: 2}
       propertyPath: lenticularMat
       value: 
-      objectReference: {fileID: 1945560337}
+      objectReference: {fileID: 684280178}
     - target: {fileID: 114293020204685654, guid: b9612cf56f1fdec409c7c350dd073a00,
         type: 2}
       propertyPath: quiltRT
       value: 
-      objectReference: {fileID: 544469010}
+      objectReference: {fileID: 2099761008}
     - target: {fileID: 4611913285419072, guid: b9612cf56f1fdec409c7c350dd073a00, type: 2}
       propertyPath: m_LocalScale.x
       value: 1
@@ -173,6 +173,70 @@ Prefab:
     - target: {fileID: 4611913285419072, guid: b9612cf56f1fdec409c7c350dd073a00, type: 2}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114293020204685654, guid: b9612cf56f1fdec409c7c350dd073a00,
+        type: 2}
+      propertyPath: tiling.name
+      value: High Res
+      objectReference: {fileID: 0}
+    - target: {fileID: 114293020204685654, guid: b9612cf56f1fdec409c7c350dd073a00,
+        type: 2}
+      propertyPath: tiling.tilesX
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114293020204685654, guid: b9612cf56f1fdec409c7c350dd073a00,
+        type: 2}
+      propertyPath: tiling.tilesY
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 114293020204685654, guid: b9612cf56f1fdec409c7c350dd073a00,
+        type: 2}
+      propertyPath: tiling.quiltSize
+      value: 4096
+      objectReference: {fileID: 0}
+    - target: {fileID: 114293020204685654, guid: b9612cf56f1fdec409c7c350dd073a00,
+        type: 2}
+      propertyPath: numViews
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 114293020204685654, guid: b9612cf56f1fdec409c7c350dd073a00,
+        type: 2}
+      propertyPath: tileSizeX
+      value: 819
+      objectReference: {fileID: 0}
+    - target: {fileID: 114293020204685654, guid: b9612cf56f1fdec409c7c350dd073a00,
+        type: 2}
+      propertyPath: tileSizeY
+      value: 455
+      objectReference: {fileID: 0}
+    - target: {fileID: 114293020204685654, guid: b9612cf56f1fdec409c7c350dd073a00,
+        type: 2}
+      propertyPath: paddingX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114293020204685654, guid: b9612cf56f1fdec409c7c350dd073a00,
+        type: 2}
+      propertyPath: paddingY
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114293020204685654, guid: b9612cf56f1fdec409c7c350dd073a00,
+        type: 2}
+      propertyPath: portionX
+      value: 0.99975586
+      objectReference: {fileID: 0}
+    - target: {fileID: 114293020204685654, guid: b9612cf56f1fdec409c7c350dd073a00,
+        type: 2}
+      propertyPath: portionY
+      value: 0.99975586
+      objectReference: {fileID: 0}
+    - target: {fileID: 114293020204685654, guid: b9612cf56f1fdec409c7c350dd073a00,
+        type: 2}
+      propertyPath: renderIn2D
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194288111520422, guid: b9612cf56f1fdec409c7c350dd073a00, type: 2}
+      propertyPath: m_TagString
+      value: MainCamera
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b9612cf56f1fdec409c7c350dd073a00, type: 2}
@@ -499,11 +563,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rotationController: {fileID: 1082252126}
   sizeA: 0
-  sizeB: 5
-  sizeC: 14
+  sizeB: 2
+  sizeC: 4
   intensityA: 0
   intensityB: 0.3
-  intensityC: 5
+  intensityC: 1.62
   colorA: {r: 0.50735295, g: 0.27979022, b: 0.27979022, a: 1}
   colorB: {r: 1, g: 1, b: 1, a: 1}
 --- !u!108 &322075726
@@ -549,7 +613,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 322075724}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.38719, y: 2.27, z: 16.75}
+  m_LocalPosition: {x: 0.38719, y: 1.53, z: 7.28}
   m_LocalScale: {x: 358.63446, y: 100, z: 255.2311}
   m_Children: []
   m_Father: {fileID: 0}
@@ -843,37 +907,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: c18f745c4a530bd4ab502ff0060cdf1d, type: 3}
   m_PrefabInternal: {fileID: 531691728}
---- !u!84 &544469010
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_Width: 1024
-  m_Height: 1024
-  m_AntiAliasing: 1
-  m_DepthFormat: 0
-  m_ColorFormat: 0
-  m_MipMap: 0
-  m_GenerateMips: 0
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 0
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1001 &546522999
 Prefab:
   m_ObjectHideFlags: 0
@@ -1097,6 +1130,30 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6b93fd896c90c094c8577de7399669b5, type: 2}
   m_IsPrefabParent: 0
+--- !u!21 &684280178
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: HoloPlay/Lenticular
+  m_Shader: {fileID: 4800000, guid: 429fb4e5e466f5d419aa7c8e90e61e45, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors: []
 --- !u!1 &720165452
 GameObject:
   m_ObjectHideFlags: 0
@@ -4791,8 +4848,8 @@ MonoBehaviour:
   intensityA: 1
   intensityB: 0.3
   intensityC: 0.26
-  colorA: {r: 0.17647058, g: 0.4565249, b: 1, a: 1}
-  colorB: {r: 1, g: 0.2205882, b: 0.2205882, a: 1}
+  colorA: {r: 0.1764706, g: 0.8313726, b: 1, a: 1}
+  colorB: {r: 1, g: 0, b: 0, a: 1}
 --- !u!108 &1843502501
 Light:
   m_ObjectHideFlags: 0
@@ -4929,30 +4986,6 @@ Transform:
   m_Father: {fileID: 1020202050}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 28.954, z: 0}
---- !u!21 &1945560337
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: HoloPlay/Lenticular
-  m_Shader: {fileID: 4800000, guid: 429fb4e5e466f5d419aa7c8e90e61e45, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors: []
 --- !u!1 &1976186141
 GameObject:
   m_ObjectHideFlags: 0
@@ -5268,6 +5301,37 @@ Transform:
   m_Father: {fileID: 886101332}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 10.123, z: 0}
+--- !u!84 &2099761008
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_Width: 4096
+  m_Height: 4096
+  m_AntiAliasing: 1
+  m_DepthFormat: 0
+  m_ColorFormat: 0
+  m_MipMap: 0
+  m_GenerateMips: 0
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 0
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1001 &2109214092
 Prefab:
   m_ObjectHideFlags: 0
