@@ -18,7 +18,6 @@ public class RotationObserver_Light : MonoBehaviour {
 
     public Color colorA;
     public Color colorB;
-    public Color colorC;
 
 	// Use this for initialization
 	void Start () {
@@ -33,13 +32,13 @@ public class RotationObserver_Light : MonoBehaviour {
         {
             _light.range = Mathf.Lerp(sizeA, sizeB, _rotationController.rotAngle / 180);
             _light.intensity = Mathf.Lerp(intensityA, intensityB, _rotationController.rotAngle / 180);
-            _light.color = Color.Lerp(colorA, colorB, _rotationController.rotAngle / 180);
         }
         else
         {
             _light.range = Mathf.Lerp(sizeB, sizeC, (_rotationController.rotAngle - 180) / 180);
-            _light.intensity = Mathf.Lerp(intensityC, intensityB, (_rotationController.rotAngle - 180) / 180);
-            _light.color = Color.Lerp(colorB, colorC, (_rotationController.rotAngle - 180) / 180);
+            _light.intensity = Mathf.Lerp(intensityB, intensityC, (_rotationController.rotAngle - 180) / 180);
         }
-	}
+        _light.color = Color.Lerp(colorA, colorB, _rotationController.rotAngle / 360);
+
+    }
 }
