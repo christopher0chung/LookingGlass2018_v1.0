@@ -7,6 +7,7 @@ TagManager:
   - A
   - B
   - C
+  - BGM
   layers:
   - Default
   - TransparentFX

@@ -8,14 +8,14 @@ public class BGM : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		if (GameObjects.Find("BGM").Count > 1)
+		if (GameObject.FindGameObjectsWithTag("BGM").Length > 1)
         {
             Destroy(this.gameObject);
 
             AudioSource myAS = gameObject.AddComponent<AudioSource>();
             myAS.loop = true;
             myAS.clip = myAC;
-            myAC.Play();
+            myAS.Play();
         }
         else
         {
