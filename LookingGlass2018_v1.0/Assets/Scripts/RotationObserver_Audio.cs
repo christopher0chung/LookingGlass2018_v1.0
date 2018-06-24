@@ -22,6 +22,10 @@ public class RotationObserver_Audio : MonoBehaviour {
 
         _AS1.clip = ac1;
         _AS2.clip = ac2;
+        _AS1.loop = true;
+        _AS2.loop = true;
+        _AS1.playOnAwake = true;
+        _AS2.playOnAwake = true;
     }
 
     // Update is called once per frame
