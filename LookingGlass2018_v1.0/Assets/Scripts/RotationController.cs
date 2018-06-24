@@ -70,7 +70,7 @@ public class RotationController : MonoBehaviour {
     public HoloPlay.Capture myCap;
 
     public float rotAngle { get; private set; }
-    //public float rotSpeedInput;
+    public float rotSpeedInput;
     public float rotSpeedOutput;
 
     [Header("Tuning Variables")]
@@ -106,14 +106,14 @@ public class RotationController : MonoBehaviour {
 
     private void InputMethod ()
     {
-        //if(Input.GetAxis("Mouse ScrollWheel") > 0)
-        //{
-        //    rotAngle += rotSpeedInput;
-        //}
-        //else if (Input.GetAxis("Mouse ScrollWheel") < 0)
-        //{
-        //    rotAngle -= rotSpeedInput;
-        //}
+        if(Input.GetAxis("Mouse ScrollWheel") > 0)
+        {
+            rotAngle += rotSpeedInput;
+        }
+        else if (Input.GetAxis("Mouse ScrollWheel") < 0)
+        {
+            rotAngle -= rotSpeedInput;
+        }
 
         rotAngle += angle_delta * angle_mult;
         angle_delta = 0;
