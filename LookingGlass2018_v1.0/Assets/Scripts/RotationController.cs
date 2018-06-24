@@ -125,7 +125,7 @@ public class RotationController : MonoBehaviour {
     {
         _rotToSet.y = rotAngle;
 
-        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(_rotToSet), rotSpeedOutput);
+        transform.rotation = Quaternion.Euler(Vector3.Lerp(transform.eulerAngles, _rotToSet, rotSpeedOutput * Mathf.Abs(transform.eulerAngles.y - _rotToSet.y)));
      
     }
 
