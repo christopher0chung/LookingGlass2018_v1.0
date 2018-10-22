@@ -23,10 +23,10 @@ public class SceneController : MonoBehaviour {
 
         if (timer > .15f)
         {
-            if (myRC.button_state)
-            {
-                SceneManager.LoadScene(nextIndex);
-            }
+            //if (myRC.button_state)
+            //{
+            //    SceneManager.LoadScene(nextIndex);
+            //}
         }
     }
 }
